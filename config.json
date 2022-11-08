@@ -2,7 +2,7 @@
     "name": "I am the Dev",
     "job": "Software Engineer",
     "github": "carlos-regis",
-    "banner": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "bg_banner": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
     "favorites": [
         {
             "name" : "Alura",
@@ -75,11 +75,6 @@
                 "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
                 "url": "https://www.youtube.com/watch?v=dvd3pNYh7So",
                 "thumbnail": "https://img.youtube.com/vi/dvd3pNYh7So/hqdefault.jpg"
-            },
-            {
-                "title": "Node JS: Construindo CRUDs com file system focando em serialização e JSON",
-                "url": "https://www.youtube.com/watch?v=8q36rNS5yVo",
-                "thumbnail": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
             },
             {
                 "title": "A MELHOR linguagem de programação com Fabio Akita",

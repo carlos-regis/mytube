@@ -1,24 +1,26 @@
+import React from "react";
 import config from "../config.json";
 import { CSSReset } from "../src/components/CSSReset";
-import Timeline from "../src/components/Timeline";
-import Banner from "../src/components/Banner";
 import Menu from "../src/components/Menu";
-import Favorites from "../src/components/Favorites";
 import Header from "../src/components/Header";
+import Timeline from "../src/components/Timeline";
+import Favorites from "../src/components/Favorites";
+
 
 function HomePage() {
+    const [filterValue, setFilterValue] = React.useState("");
     return (
         <>
             <CSSReset />
             <div style={{
                 display: "flex",
-                flexDirection: "column",
+                flexDirection: "column", 
                 flex: 1
             }}>
-                <Menu />
-                <Banner />
+                {/* Prop Drilling */}
+                <Menu filterValue={filterValue} setFilterValue={setFilterValue} />
                 <Header />
-                <Timeline playlists={config.playlists} />
+                <Timeline searchValue={filterValue} playlists={config.playlists} />
                 <Favorites favorites={config.favorites} />
             </div>
         </>

@@ -1,5 +1,6 @@
 import styled from "styled-components";
-import config from "../../config.json";
+import config from "../../../config.json"
+import { StyledBanner } from "../Header/components/Banner"
 
 const StyledHeader = styled.div`
     img {
@@ -8,7 +9,6 @@ const StyledHeader = styled.div`
         border-radius: 50%;
     }
     .user-info {
-        margin-top: 10px;
         display: flex;
         align-items: center;
         width: 100%;
@@ -20,6 +20,7 @@ const StyledHeader = styled.div`
 export default function Header() {
     return (
         <StyledHeader>
+            <StyledBanner bg={config.bg_banner} />
             <section className="user-info">
                 <img src={`https://github.com/${config.github}.png`} />
                 <div>
