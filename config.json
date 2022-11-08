@@ -2,6 +2,19 @@
     "name": "I am the Dev",
     "job": "Software Engineer",
     "github": "carlos-regis",
+    "banner": "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+    "favorites": [
+        {
+            "name" : "Alura",
+            "image" : "https://yt3.ggpht.com/xqhIoXspeX7eqouJvNHl1xqpv9213Pl26ENZbuouXxO2RlDadjsveNXfgnj8GTUk7thFYUkVRg=s176-c-k-c0x00ffffff-no-rj-mo",
+            "url" : "https://www.youtube.com/c/Alura"
+        },
+        {
+            "name" : "Mario Souto - Dev Soutinho",
+            "image" : "https://yt3.ggpht.com/m8Yrqf0Y81L4mZ1Cq7rGnJ4NDHe6729rxiFZvWyy9-xd_Z7Osmza7J8NWpN1axMHcCb1oKJNgA=s176-c-k-c0x00ffffff-no-rj-mo",
+            "url" : "https://www.youtube.com/c/DevSoutinho"
+        }
+    ],
     "playlists": {
         "games": [
             {
@@ -28,39 +41,9 @@
                 "title": "Netdecking Estraga o Magic?",
                 "url": "https://www.youtube.com/watch?v=dXihyhYEsEc",
                 "thumbnail": "https://img.youtube.com/vi/dXihyhYEsEc/hqdefault.jpg"
-            },
-            {
-                "title": "Cities: Skylines - EPCOTAB, o futuro de Saint Laurrent",
-                "url": "https://www.youtube.com/watch?v=zybKHMgLCWU",
-                "thumbnail": "https://img.youtube.com/vi/zybKHMgLCWU/hqdefault.jpg"
-            },
-            {
-                "title": "We Were Here Together - Os Enigmas deste Mundo",
-                "url": "https://www.youtube.com/watch?v=UKgQsrHUG40",
-                "thumbnail": "https://img.youtube.com/vi/UKgQsrHUG40/hqdefault.jpg"
-            },
-            {
-                "title": "Microsoft Flight Simulator - Top Gun: Oceania - Missão RJ!",
-                "url": "https://www.youtube.com/watch?v=n3TneUb5c-w",
-                "thumbnail": "https://img.youtube.com/vi/n3TneUb5c-w/hqdefault.jpg"
             }
         ],
         "front-end": [
-            {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://youtube.com/watch?v=jOAU81jdi-c",
-                "thumbnail": "https://img.youtube.com/vi/jOAU81jdi-c/hqdefault.jpg"
-            },
-            {
-                "title": "Jogo com JavaScript #01: Criando um Flappy Bird do ZERO!!!",
-                "url": "https://www.youtube.com/watch?v=llF6vD-RljE",
-                "thumbnail": "https://img.youtube.com/vi/llF6vD-RljE/hqdefault.jpg"
-            },
-            {
-                "title": "A Primeira Aula de Flutter Que Todo Mundo Deveria Ter",
-                "url": "https://www.youtube.com/watch?v=J4BVaXkwmM8",
-                "thumbnail": "https://img.youtube.com/vi/J4BVaXkwmM8/hqdefault.jpg"
-            },
             {
                 "title": "O QUE SÃO FRAMEWORKS E BIBLIOTECAS? QUAIS AS DIFERENÇAS?",
                 "url": "https://www.youtube.com/watch?v=dp0zB4n3MUs",
@@ -85,11 +68,6 @@
                 "title": "5 Erros Históricos do CSS",
                 "url": "https://www.youtube.com/watch?v=HNjkqONzGS0",
                 "thumbnail": "https://img.youtube.com/vi/HNjkqONzGS0/hqdefault.jpg"
-            },
-            {
-                "title": "Deploy de Front End ATUALIZADO! | O que eu uso para hospedagem de Front End",
-                "url": "https://www.youtube.com/watch?v=d9c0r-J6CdM",
-                "thumbnail": "https://img.youtube.com/vi/d9c0r-J6CdM/hqdefault.jpg"
             }
         ],
         "back-end": [
@@ -104,30 +82,21 @@
                 "thumbnail": "https://img.youtube.com/vi/8q36rNS5yVo/hqdefault.jpg"
             },
             {
-                "title": "O que é o Java? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=90NcVNsKGik",
-                "thumbnail": "https://img.youtube.com/vi/90NcVNsKGik/hqdefault.jpg"
-            },
-            {
-                "title": "O que é Machine Learning? #HipstersPontoTube",
-                "url": "https://www.youtube.com/watch?v=Iuz_jc96bQk",
-                "thumbnail": "https://img.youtube.com/vi/Iuz_jc96bQk/hqdefault.jpg"
-            },
-            {
-                "title": "A MELHOR linguagem de programação com Fabio Akita | #HipstersPontoTube",
+                "title": "A MELHOR linguagem de programação com Fabio Akita",
                 "url": "https://www.youtube.com/watch?v=imB0QVoNrGc",
                 "thumbnail": "https://img.youtube.com/vi/imB0QVoNrGc/hqdefault.jpg"
             },
             {
-                "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe | #HipstersPontoTube",
+                "title": "Top 5 libs que todo aplicativo Android deve ter com Alex Felipe",
                 "url": "https://www.youtube.com/watch?v=ldRbnpy-qQs",
                 "thumbnail": "https://img.youtube.com/vi/ldRbnpy-qQs/hqdefault.jpg"
             },
             {
-                "title": "O que é o C#? #HipstersPontoTube",
+                "title": "O que é o C#?",
                 "url": "https://www.youtube.com/watch?v=0JWMVc1CqpA",
                 "thumbnail": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
         ]
     }
 }
+

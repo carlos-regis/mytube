@@ -24,12 +24,11 @@ export const StyledTimeline = styled.div`
     overflow: hidden;
     padding: 16px;
     div {
-      
       width: calc(100vw - 16px * 4);
       display: grid;
       grid-gap: 16px;
       grid-template-columns: repeat(auto-fill,minmax(200px,1fr));
-      grid-auto-flow: column;
+      grid-auto-flow: row;
       grid-auto-columns: minmax(200px,1fr);
       overflow-x: scroll;
       scroll-snap-type: x mandatory;
@@ -40,8 +39,39 @@ export const StyledTimeline = styled.div`
           display: block;
           padding-right: 24px;
           color: ${({ theme }) => theme.textColorBase || "#222222"};
+          text-align: left;
         }
       }
     }
   }
 `;
+
+export default function Timeline(props) {
+  const playlistNames = Object.keys(props.playlists);
+  return (
+    <StyledTimeline>
+      {playlistNames.map((playlistName) => {
+        const videos = props.playlists[playlistName];
+        console.log(playlistName);
+        console.log(videos);
+        return (
+          <section>
+            <h2>{playlistName}</h2>
+            <div>
+              {videos.map((video) => {
+                return (
+                  <a href={video.url}>
+                    <img src={video.thumbnail} />
+                    <span>
+                      {video.title}
+                    </span>
+                  </a>
+                )
+              })}
+            </div>
+          </section>
+        )
+      })}
+    </StyledTimeline>
+  )
+}
