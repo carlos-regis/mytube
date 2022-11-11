@@ -1,6 +1,8 @@
+import config from "../../../config.json";
 import styled from "styled-components";
+import Favorites from "./components/Favorites";
 
-export const StyledTimeline = styled.div`
+const StyledTimeline = styled.div`
   flex: 1;
   width: 100%;
   padding: 16px;
@@ -74,6 +76,7 @@ export default function Timeline({searchValue, ...props}) {
           </section>
         )
       })}
+      <Favorites favorites={config.favorites} />
     </StyledTimeline>
   )
 }

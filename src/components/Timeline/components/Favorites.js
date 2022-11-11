@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const FavoritesStyle = styled.div`
+const StyledFavorites = styled.div`
   width: 100%;
   height: 200px;
   margin-left: 20px;
@@ -34,7 +34,7 @@ const FavoritesStyle = styled.div`
 export default function Favorites(favorites) {
     const favoritesList = Object.keys(favorites.favorites);
     return (
-        <FavoritesStyle>
+        <StyledFavorites>
             <div className="fav-title">
                 <h2>Favorites</h2>
             </div>
@@ -51,7 +51,7 @@ export default function Favorites(favorites) {
                     );
                 })}
             </div>
-        </FavoritesStyle>
+        </StyledFavorites>
     );
 
 }
