@@ -14,7 +14,6 @@ function HomePage() {
                 flexDirection: "column",
                 flex: 1
             }}>
-                {/* Prop Drilling */}
                 <Menu filterValue={filterValue} setFilterValue={setFilterValue} />
                 <Header />
                 <Timeline searchValue={filterValue} playlists={config.playlists} />

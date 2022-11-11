@@ -17,7 +17,7 @@ export default function ColorModeProvider(props) {
             setMode("dark");
         }
         else {
-            console.log("Inexistent color mode!")
+            console.log("Invalid color mode!")
         }
     }
 

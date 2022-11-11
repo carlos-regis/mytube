@@ -33,7 +33,7 @@ export default function Menu({ filterValue, setFilterValue }) {
         <Logo />
       </div>
       <Search filterValue={filterValue} setFilterValue={setFilterValue} />
-      <DarkModeSwitch></DarkModeSwitch>
+      <DarkModeSwitch />
     </StyledMenu>
   );
 }
