@@ -7,13 +7,6 @@ function getYouTubeThumbnail(url) {
     return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`
 }
 
-function getVideoId(url) {
-    const videoId = url.split("v=")[1];
-    const ampersandPosition = videoId.indexOf("&");
-
-    return ampersandPosition == -1 ? videoId : videoId.substring(0, ampersandPosition);
-}
-
 // Custom Hook
 function useForm(formProps) {
     const [values, setValues] = React.useState(formProps.initialValues);

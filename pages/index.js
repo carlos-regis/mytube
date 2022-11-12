@@ -13,15 +13,17 @@ function HomePage() {
     React.useEffect(() => {
         service.getAllVideos()
             .then((query) => {
-                const newPlaylists = { ...playlists };
+                const newPlaylists = {};
                 query.data.forEach((video) => {
                     if (!newPlaylists[video.playlist]) {
                         newPlaylists[video.playlist] = [];
                     }
                     else {
-                        newPlaylists[video.playlist].push(video);
+                        newPlaylists[video.playlist] = [
+                            video, ...newPlaylists[video.playlist]
+                        ];
                     }
-                })
+                });
                 setPlaylists(newPlaylists);
             });
     }, []);
