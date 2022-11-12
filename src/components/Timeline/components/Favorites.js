@@ -53,5 +53,4 @@ export default function Favorites(favorites) {
             </div>
         </StyledFavorites>
     );
-
 }
