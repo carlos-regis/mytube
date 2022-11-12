@@ -50,7 +50,7 @@
                 "thumbnail": "https://img.youtube.com/vi/dp0zB4n3MUs/hqdefault.jpg"
             },
             {
-                "title": "Angular (O Vídeo que Você Precisava para Começar no Framework) // Dicionário do Programador",
+                "title": "Angular - Dicionário do Programador",
                 "url": "https://www.youtube.com/watch?v=Yf0rC7dERjg",
                 "thumbnail": "https://img.youtube.com/vi/Yf0rC7dERjg/hqdefault.jpg"
             },
@@ -92,6 +92,9 @@
                 "thumbnail": "https://img.youtube.com/vi/0JWMVc1CqpA/hqdefault.jpg"
             }
         ]
+    },
+    "supabase": {
+        "url": "https://movsmhbpkootjygekols.supabase.co/",
+        "api_key": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1vdnNtaGJwa29vdGp5Z2Vrb2xzIiwicm9sZSI6ImFub24iLCJpYXQiOjE2NjgyNjE1NjUsImV4cCI6MTk4MzgzNzU2NX0.PXcoKQ6dfCfHEs6KM_WjyCNCF1dZo8YXNaswOLR8t38"
     }
 }
-

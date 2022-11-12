@@ -1,5 +1,18 @@
 import React from "react";
+import config from "../../../config.json";
 import { StyledRegisterVideo } from "./styles"
+import { createClient } from '@supabase/supabase-js'
+
+function getYouTubeThumbnail(url) {
+    return `https://img.youtube.com/vi/${url.split("v=")[1]}/hqdefault.jpg`
+}
+
+function getVideoId(url) {
+    const videoId = url.split("v=")[1];
+    const ampersandPosition = videoId.indexOf("&");
+
+    return ampersandPosition == -1 ? videoId : videoId.substring(0, ampersandPosition);
+}
 
 // Custom Hook
 function useForm(formProps) {
@@ -18,9 +31,12 @@ function useForm(formProps) {
     };
 }
 
+// Create a single supabase client for interacting with your database
+const supabase = createClient(config.supabase.url, config.supabase.api_key);
+
 export default function RegisterVideo() {
     const registerForm = useForm({
-        initialValues: { title: "Frost Punk", url: "https://www.youtube.com/" }
+        initialValues: { title: "Angular", url: "https://www.youtube.com/watch?v=Yf0rC7dERjg" }
     });
     const [visibleForm, setVisibleFrom] = React.useState(true);
 
@@ -32,6 +48,20 @@ export default function RegisterVideo() {
             {visibleForm && (
                 <form onSubmit={(event) => {
                     event.preventDefault();
+
+                    supabase.from("video").insert({
+                        title: registerForm.values.title,
+                        url: registerForm.values.url,
+                        thumbnail: getYouTubeThumbnail(registerForm.values.url),
+                        playlist: "games"
+                    })
+                    .then((result) => {
+                        console.log(result);
+                    })
+                    .catch((error) => {
+                        console.log(error);
+                    })
+
                     setVisibleFrom(false);
                     registerForm.clearForm();
                 }}>
